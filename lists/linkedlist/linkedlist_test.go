@@ -24,6 +24,7 @@ func TestLinkedList_Add(t *testing.T) {
 		{"add to list with 1 item", t1, args{2}},
 		//{"add to list with 1 item but inconsistent count", t1f, args{2} },
 		{"add to list with 2 items", t2, args{3}},
+		{"add to list with 3 items", t3, args{4}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -51,6 +52,12 @@ func TestLinkedList_Add(t *testing.T) {
 			}
 
 		})
+	}
+}
+
+func BenchmarkLinkedList_Add(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		t1.Add(n)
 	}
 }
 

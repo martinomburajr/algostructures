@@ -9,6 +9,7 @@ type LinkedList struct {
 	head *node
 }
 
+//Get retrieves an item from a given index within the list
 func (l *LinkedList) Get(index int64) (interface{}, error) {
 	if index == 0 && l.count == 0 {
 		return nil, fmt.Errorf("list is empty / uninitialized")
@@ -33,6 +34,7 @@ func (l *LinkedList) Get(index int64) (interface{}, error) {
 	 return nil, fmt.Errorf("illegal negative index")
 }
 
+//Add will add an item to the end of the list
 func (l *LinkedList) Add(item interface{}) {
 	if l.count == 0 {
 		l.head = &node{item, nil}
@@ -41,11 +43,20 @@ func (l *LinkedList) Add(item interface{}) {
 		l.head.next = &node{item, nil}
 		l.count++
 	}else if l.count > 1 {
-		//
+		var i int64
+		temp := l.head.next
+		for i = 1; i <= l.count; i++  {
+			if i == l.count-1 {
+				temp.next = &node{item, nil}
+				return
+			}
+			temp = temp.next
+		}
 		l.count++
 	}
 }
 
+//Size returns the current size of the list.
 func (l *LinkedList) Size() int64 {
 	return l.count
 }
