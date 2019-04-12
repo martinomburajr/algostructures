@@ -56,7 +56,52 @@ func (l *LinkedList) Add(item interface{}) {
 	}
 }
 
+//Remove will remove an item from the specified index and return the count of the list.
+func (l *LinkedList) Remove(index int64) (int64, error) {
+	if l.count == 0 {
+		return -1, fmt.Errorf("cannot remove from empty list")
+	}
+
+	if index > l.count {
+		return -1, fmt.Errorf("index out of bounds (upper)")
+	}else if index < 0 {
+		return -1, fmt.Errorf("index out of bounds (lower)")
+	}
+
+	var i int64
+	temp := l.head
+	for i = 0; i <= index ; i++  {
+		if i == index-1 {
+			temp.next = temp.next.next
+			temp.next.next = nil
+			l.count--
+			return l.count, nil
+		}
+		temp = temp.next
+	}
+
+	return 0, nil
+}
+
 //Size returns the current size of the list.
 func (l *LinkedList) Size() int64 {
 	return l.count
+}
+
+//ToSlice returns a slice version of the linkedlist. If the linkedlist has size of 0 it returns nil
+func (l *LinkedList) ToSlice() []interface{} {
+	if l.count <= 0 {
+		return nil
+	}
+
+	s := make([]interface{}, l.count)
+	var i int64
+	temp := l.head
+	for i = 0; i < l.count; i++ {
+		s = append(s, temp.v)
+		if i != l.count - 1 {
+			temp = temp.next
+		}
+	}
+	return s
 }

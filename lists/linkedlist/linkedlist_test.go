@@ -4,6 +4,7 @@ import (
 	"reflect"
 	"testing"
 )
+
 var t1f = LinkedList{count: 1, head: &node{1, &node{2, nil}}}
 
 var t0 = LinkedList{}
@@ -118,6 +119,68 @@ func TestLinkedList_Get(t *testing.T) {
 			}
 			if !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("LinkedList.Get() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+
+func TestLinkedList_Remove(t *testing.T) {
+	type args struct {
+		index int64
+	}
+	tests := []struct {
+		name    string
+		fields  LinkedList
+		args    args
+		want    int64
+		wantErr bool
+	}{
+		{"remove from empty list should return err", t0, args{0}, -1, true},
+		{"remove from list with one item with negative index should return err", t0, args{-1}, -1, true},
+		{"index larger than list size should return err", t0, args{1}, -1, true},
+		{"index larger than list size should return err (pt2)", t1, args{2}, -1, true},
+		{"remove from list with one item should reduce size to 0", t1, args{0}, 0, false},
+		{"remove from list with two items should reduce size to 1", t2, args{0}, 1, false},
+		//{"remove from list with one item should reduce size to 0 bad index", t1, args{1}, -1,false},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			l := &LinkedList{
+				count: tt.fields.count,
+				head:  tt.fields.head,
+			}
+			got, err := l.Remove(tt.args.index)
+			if (err != nil) != tt.wantErr {
+				t.Errorf("LinkedList.Remove() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+			if got != tt.want {
+				t.Errorf("LinkedList.Remove() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+
+func TestLinkedList_ToSlice(t *testing.T) {
+	tests := []struct {
+		name   string
+		fields LinkedList
+		want   []interface{}
+	}{
+		{"empty list should return nil", t0, nil},
+		{"list with field size 1", t1, nil},
+		{"list with field size 2", t2, nil},
+		{"list with field size 3", t3, nil},
+
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			l := &LinkedList{
+				count: tt.fields.count,
+				head:  tt.fields.head,
+			}
+			if got := l.ToSlice(); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("LinkedList.ToSlice() = %v, want %v", got, tt.want)
 			}
 		})
 	}
