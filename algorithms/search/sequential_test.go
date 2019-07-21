@@ -37,8 +37,8 @@ func TestSequentialSearch(t *testing.T) {
 }
 
 func BenchmarkSequentialTest(b *testing.B) {
-	arr := []int{1,2,3,4,5,6,7,8,9,10}
+	arr := []int{0,1,2,3,4,5,6,7,8,9,10}
 	for i := 0; i < b.N; i++ {
-		SequentialSearch(arr, 6)
+		SequentialSearch(arr, 7)
 	}
 }
