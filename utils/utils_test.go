@@ -2,6 +2,7 @@ package utils
 
 import (
 	"testing"
+	"reflect"
 )
 
 func TestGenerateOrderedAscendingArray(t *testing.T) {
@@ -20,23 +21,32 @@ func TestGenerateOrderedAscendingArray(t *testing.T) {
 	}
 	for _, v := range tt {
 		t.Run(v.name, func(t *testing.T) {
-			if ans := GenerateOrderedAscendingArray(v.args.start, v.args.size); checkSliceEquality(t, ans, v.result) {
+			if ans := GenerateOrderedAscendingArray(v.args.start, v.args.size); !CheckSliceEquality(t, ans, v.result) {
 				t.Errorf("Wanted %d | got %d", v.result, ans)
 			}
 		})
 	}
 }
 
-func checkSliceEquality(t *testing.T, sliceA, sliceB []int) bool {
-	if len(sliceA) != len(sliceB) {
-		t.Errorf("\nsliceA and sliceB are not the same length | %#v - %#v \b", sliceA, sliceB)
-		return false
+
+func TestShift(t *testing.T) {
+	type args struct {
+		arr []int
+		start, size int
 	}
-	for i := range sliceA {
-		if sliceA[i] != sliceB[i] {
-			t.Errorf("\ncontain different items at index %d | %#v - %#v \b", i, sliceA, sliceB)
-			return false
-		}
+	tt := []struct{
+		name string
+		args args
+		result []int
+	}{
+		{"size-1", args{[]int{1},0,1}, slice1},
 	}
-	return true
+	for _, v := range tt {
+		t.Run(v.name, func(t *testing.T) {
+			if ans := ShiftArray(v.args.start, v.args.size); reflect.DeepEquals(v.result, ans) {
+				t.Errorf("Wanted %d | got %d", v.result, ans)
+			}
+		})
+	}
 }
+
