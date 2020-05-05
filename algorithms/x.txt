@@ -1,0 +1,51 @@
+                  TickTick
+Greedy Algorithms
+Recursion & Tail Recursion
+Dynamic Programming
+Backtracking Algorithms
+Two's Complement
+One's Complement
+Karatsuba Multiplication
+Heap Sort
+Hashtable Contention Algorithms
+Hashing Algorithms
+Fast Fourier Transform
+Euclidean Algorithm
+Data Compression Algorithms
+Beam Search
+Flood Fill Algorithm
+Longest Increasing Subsequence Algorithm
+Kadane's Algorithm
+Topological Sort (Directed Acyclical Graph)
+Floyd-Warshall Algorithm 1/4 Kruskal's Algorithm
+                   TickTick
+Longest Increasing Subsequence Algorithm Kadane's Algorithm
+Topological Sort (Directed Acyclical Graph) Floyd-Warshall Algorithm
+Kruskal's Algorithm
+Lee Algorithm
+A* Algorithm Bellman-Ford Algorithm Dijkstra's Algorithm Heap Sort
+Merge Sort
+Bubble Sort
+Selection Sort
+Quick Sort (Partition Exchange Sort) Insertion Sort
+PostOrder DFS
+Preorder DFS
+Inorder DFS
+Breadth First Search (Graph) Breadth First Search (Tree) Depth First Search (Graph) Depth First Search (Tree) Linear Search
+Binary Search
+
+Breadth First Search (Graph) Breadth First Search (Tree) Depth First Search (Graph) Depth First Search (Tree) Linear Search
+Binary Search
+Fibonacci Heap
+Binomial Heap
+HashTable
+Trie
+Graphs
+Max Heap
+Min Heap
+Queue
+Stack
+B-Tree
+Red-Black Tree AVL Tree
+Binary Search Tree Binary Tree
+Linked Lists

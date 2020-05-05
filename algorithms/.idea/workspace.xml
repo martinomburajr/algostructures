@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c614a4e4-6633-41c0-8c66-20d04973b0d0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="vuhb8k7z" />
+  </component>
+  <component name="ProjectId" id="1b4d8hN5QvL9iQORCtUZQQA3H5Y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="go" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Go Build.go build scratch_2.go">
+    <configuration name="go build scratch_2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="algorithms" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build sort.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="algorithms" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/sort.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_BubbleSort in algorithms" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithms" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/sort_test.go" />
+      <pattern value="^Test_BubbleSort$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_BubbleSort in sort_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithms" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/sort_test.go" />
+      <pattern value="^Test_BubbleSort$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build sort.go" />
+      <item itemvalue="Go Build.go build scratch_2.go" />
+      <item itemvalue="Go Test.Test_BubbleSort in algorithms" />
+      <item itemvalue="Go Test.Test_BubbleSort in sort_test.go" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build scratch_2.go" />
+        <item itemvalue="Go Test.Test_BubbleSort in sort_test.go" />
+        <item itemvalue="Go Build.go build sort.go" />
+        <item itemvalue="Go Test.Test_BubbleSort in algorithms" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1184" y="316" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587895375904">
+      <screen x="0" y="0" width="3440" height="1440" />
+    </state>
+    <state x="1184" y="316" key="#com.intellij.execution.impl.EditConfigurationsDialog/1672.-1080.2560.1080/-888.-1080.2560.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1587895375904" />
+    <state x="1420" y="300" key="#go_build_sort.go" timestamp="1587895338769">
+      <screen x="0" y="0" width="3440" height="1440" />
+    </state>
+    <state x="1420" y="300" key="#go_build_sort.go/1672.-1080.2560.1080/-888.-1080.2560.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1587895338769" />
+    <state width="3388" height="344" key="GridCell.Tab.0.bottom" timestamp="1588012661030">
+      <screen x="0" y="23" width="3440" height="1337" />
+    </state>
+    <state width="3388" height="344" key="GridCell.Tab.0.bottom/1672.-1057.2560.1057/-888.-1057.2560.1057/0.23.3440.1337@0.23.3440.1337" timestamp="1588012661030" />
+    <state width="3388" height="483" key="GridCell.Tab.0.bottom/1672.-1080.2560.1080/-888.-1080.2560.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1587895919359" />
+    <state width="3388" height="344" key="GridCell.Tab.0.center" timestamp="1588012661028">
+      <screen x="0" y="23" width="3440" height="1337" />
+    </state>
+    <state width="3388" height="344" key="GridCell.Tab.0.center/1672.-1057.2560.1057/-888.-1057.2560.1057/0.23.3440.1337@0.23.3440.1337" timestamp="1588012661028" />
+    <state width="3388" height="483" key="GridCell.Tab.0.center/1672.-1080.2560.1080/-888.-1080.2560.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1587895919355" />
+    <state width="3388" height="344" key="GridCell.Tab.0.left" timestamp="1588012661028">
+      <screen x="0" y="23" width="3440" height="1337" />
+    </state>
+    <state width="3388" height="344" key="GridCell.Tab.0.left/1672.-1057.2560.1057/-888.-1057.2560.1057/0.23.3440.1337@0.23.3440.1337" timestamp="1588012661028" />
+    <state width="3388" height="483" key="GridCell.Tab.0.left/1672.-1080.2560.1080/-888.-1080.2560.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1587895919352" />
+    <state width="3388" height="344" key="GridCell.Tab.0.right" timestamp="1588012661029">
+      <screen x="0" y="23" width="3440" height="1337" />
+    </state>
+    <state width="3388" height="344" key="GridCell.Tab.0.right/1672.-1057.2560.1057/-888.-1057.2560.1057/0.23.3440.1337@0.23.3440.1337" timestamp="1588012661029" />
+    <state width="3388" height="483" key="GridCell.Tab.0.right/1672.-1080.2560.1080/-888.-1080.2560.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1587895919357" />
+    <state width="3388" height="289" key="GridCell.Tab.1.bottom" timestamp="1587929951764">
+      <screen x="0" y="23" width="3440" height="1337" />
+    </state>
+    <state width="3388" height="289" key="GridCell.Tab.1.bottom/1672.-1057.2560.1057/-888.-1057.2560.1057/0.23.3440.1337@0.23.3440.1337" timestamp="1587929951764" />
+    <state width="3388" height="483" key="GridCell.Tab.1.bottom/1672.-1080.2560.1080/-888.-1080.2560.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1587895889261" />
+    <state width="3388" height="289" key="GridCell.Tab.1.center" timestamp="1587929951763">
+      <screen x="0" y="23" width="3440" height="1337" />
+    </state>
+    <state width="3388" height="289" key="GridCell.Tab.1.center/1672.-1057.2560.1057/-888.-1057.2560.1057/0.23.3440.1337@0.23.3440.1337" timestamp="1587929951763" />
+    <state width="3388" height="483" key="GridCell.Tab.1.center/1672.-1080.2560.1080/-888.-1080.2560.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1587895889259" />
+    <state width="3388" height="289" key="GridCell.Tab.1.left" timestamp="1587929951762">
+      <screen x="0" y="23" width="3440" height="1337" />
+    </state>
+    <state width="3388" height="289" key="GridCell.Tab.1.left/1672.-1057.2560.1057/-888.-1057.2560.1057/0.23.3440.1337@0.23.3440.1337" timestamp="1587929951762" />
+    <state width="3388" height="483" key="GridCell.Tab.1.left/1672.-1080.2560.1080/-888.-1080.2560.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1587895889259" />
+    <state width="3388" height="289" key="GridCell.Tab.1.right" timestamp="1587929951764">
+      <screen x="0" y="23" width="3440" height="1337" />
+    </state>
+    <state width="3388" height="289" key="GridCell.Tab.1.right/1672.-1057.2560.1057/-888.-1057.2560.1057/0.23.3440.1337@0.23.3440.1337" timestamp="1587929951764" />
+    <state width="3388" height="483" key="GridCell.Tab.1.right/1672.-1080.2560.1080/-888.-1080.2560.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1587895889260" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/sort.go</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
