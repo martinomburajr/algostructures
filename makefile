@@ -7,6 +7,9 @@ GO_FILES := $(shell find . -name '*.go' | grep -v /vendor/ | grep -v _test.go)
 
 all: build
 
+build: # Build the binary
+	@CGO_ENABLED=false go build -a -v -o dsa
+
 lint: dep
 	@golint -set_exit_status ${PKG_LIST}
 
