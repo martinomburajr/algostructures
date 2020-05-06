@@ -1,4 +1,4 @@
-package sort
+package mergesort
 
 import (
 	"testing"
@@ -15,7 +15,8 @@ func TestComparer(t *testing.T) {
 	} {
 		{"empty", []int{},[]int{}, []int{}},
 		{"size-1", []int{1}, []int{0}, []int{0, 1}},
-		{"size-2", []int{1, 0}, []int{2}, []int{0, 1, 2}},
+		{"size-2", []int{0, 1}, []int{2}, []int{0, 1, 2}},
+		{"size-2 [swap-sides]", []int{2}, []int{0, 1}, []int{0, 1, 2}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -38,6 +39,7 @@ func TestMergeSort(t *testing.T) {
 		{"size-1", []int{1}, []int{1}},
 		{"size-2", []int{1, 0}, []int{0, 1}},
 		{"size-3", []int{1, 0, 2}, []int{0, 1, 2}},
+		{"size-4", []int{1, 0, 2,5,4,7,6,3}, []int{0, 1, 2,3,4,5,6,7}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
